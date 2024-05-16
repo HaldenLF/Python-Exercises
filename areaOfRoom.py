@@ -1,12 +1,9 @@
 def areaOfRoom():
-    print("Please enter the width of the room")
-    widthInput = input("> ")
-    print("Please enter the length of the room")
-    lengthInput = input("> ")
+    length = float(input("Enter the length of the room: "))
+    width = float(input("Enter the width of the room: "))
 
-    Width = int(widthInput)
-    Length = int(lengthInput)
+    area = length * width
 
-    return Length* Width
+    return ("The area of the room is ",  area ," sqaure meters")
 
 print(areaOfRoom())
